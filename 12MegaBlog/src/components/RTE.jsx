@@ -12,6 +12,7 @@ name={name || "content"}
 control={control}
 render={({field: {onChange}}) => (
     <Editor
+    apiKey="aeh5q1k6k3u0iuuvlhsl8ehbjmpzgywu4xn2bp6iew74hqvk"
     initialValue={defaultValue}
     init={{
         initialValue: defaultValue,
@@ -41,7 +42,8 @@ render={({field: {onChange}}) => (
         ],
         toolbar:
         "undo redo | blocks | image | bold italic forecolor | alignleft aligncenter bold italic forecolor | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent |removeformat | help",
-        content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }"
+        content_style: "body { font-family:Helvetica,Arial,sans-serif; font-size:14px }",
+        
     }}
     onEditorChange={onChange}
     />
